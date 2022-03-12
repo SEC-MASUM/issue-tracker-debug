@@ -51,7 +51,7 @@ const fetchIssues = () => {
   issuesList.innerHTML = "";
 
   for (var i = 0; i < issuesObj.length; i++) {
-    const { id, description, severity, assignedTo, status } = issues[i];
+    const { id, description, severity, assignedTo, status } = issuesObj[i];
 
     issuesList.innerHTML += `<div class="well">
                               <h6>Issue ID: ${id} </h6>
